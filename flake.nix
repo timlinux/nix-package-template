@@ -38,6 +38,7 @@
         git
         pre-commit
         gum
+        bearer
       ];
 
       shellHook = ''
