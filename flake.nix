@@ -36,6 +36,8 @@
       buildInputs = with pkgs; [
         vscode
         git
+        pre-commit
+        gum
       ];
 
       shellHook = ''

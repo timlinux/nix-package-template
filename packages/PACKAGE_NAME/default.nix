@@ -1,7 +1,7 @@
 {pkgs, ...}: let
   desktopItem = pkgs.makeDesktopItem {
     name = "[PACKAGE NAME]";
-    exec = "[PACAKAGE NAME]"; # Replace with whatever script must be executed
+    exec = "[PACKAGE NAME]"; # Replace with whatever script must be executed
     icon = "[PACKAGE NAME]";
     desktopName = "[PACKAGE NAME]";
     comment = "[PACKAGE DESCRIPTION]";
