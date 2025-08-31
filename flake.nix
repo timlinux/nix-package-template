@@ -36,9 +36,11 @@
       buildInputs = with pkgs; [
         vscode
         git
-        pre-commit
         gum
+        pre-commit
         bearer
+        markdownlint-cli
+        pkgs.nodePackages.cspell
       ];
 
       shellHook = ''
