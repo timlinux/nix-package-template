@@ -22,8 +22,10 @@
     };
   in {
 
-    packages.x86_64-linux = {
-      default = pkgs.callPackage ./packages/[PACKAGE NAME] {};
+    packages.x86_64-linux = rec {
+      # recursive to default alias can refer to utils
+      [PACKAGE NAME] = pkgs.callPackage ./packages/[PACKAGE NAME] {};
+      default = [PACKAGE NAME]
     };
 
     ######################################################
