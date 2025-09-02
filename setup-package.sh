@@ -111,6 +111,7 @@ if [ -d "$PACKAGE_TEMPLATE_DIR" ]; then
         sed -i "s/\[PACKAGE DESCRIPTION\]/$PACKAGE_DESCRIPTION/g" "$NEW_PACKAGE_DIR/default.nix"
         # Also replace any remaining PACKAGE_NAME references
         sed -i "s/PACKAGE_NAME/$PACKAGE_NAME/g" "$NEW_PACKAGE_DIR/default.nix"
+        sed -i "s/\[PACKAGE NAME\]/$PACKAGE_NAME/g" "utils/prompt.sh"
     fi
 
     # Update README.md in the renamed package directory
@@ -118,6 +119,7 @@ if [ -d "$PACKAGE_TEMPLATE_DIR" ]; then
         echo "  ✓ Updating $NEW_PACKAGE_DIR/README.md"
         sed -i "s/\[PACKAGE NAME\]/$PACKAGE_NAME/g" "$NEW_PACKAGE_DIR/README.md"
         sed -i "s/\[PACKAGE DESCRIPTION\]/$PACKAGE_DESCRIPTION/g" "$NEW_PACKAGE_DIR/README.md"
+        sed -i "s/\[PACKAGE DESCRIPTION\]/$PACKAGE_DESCRIPTION/g" "utils/prompt.sh"
     fi
 
     echo "  ✓ Package directory renamed to: $NEW_PACKAGE_DIR"
