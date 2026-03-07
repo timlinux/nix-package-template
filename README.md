@@ -1,3 +1,13 @@
+# ⚠️ THIS PROJECT IS NO LONGER MAINTAINED ⚠️
+
+[![No Maintenance Intended](https://unmaintained.tech/badge.svg)](https://unmaintained.tech/)
+
+> **This repository has been archived and is no longer actively maintained.**
+>
+> If you have questions or need information about this project, please contact: **tim@kartoza.com**
+
+---
+
 # ❄️ NixOS [PACKAGE NAME] [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
